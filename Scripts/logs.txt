@@ -1,0 +1,598 @@
+PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> venv\Scripts\activate
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> selenium
+selenium : The term 'selenium' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:1
++ selenium
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (selenium:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> pip install selenium
+Requirement already satisfied: selenium in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (4.21.0)
+Requirement already satisfied: urllib3<3,>=1.26 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from urllib3[socks]<3,>=1.26->selenium) (2.2.1)
+Requirement already satisfied: trio~=0.17 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from selenium) (0.25.1)
+Requirement already satisfied: trio-websocket~=0.9 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from selenium) (0.11.1)
+Requirement already satisfied: certifi>=2021.10.8 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from selenium) (2024.6.2)
+Requirement already satisfied: typing_extensions>=4.9.0 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from selenium) (4.12.1)
+Requirement already satisfied: attrs>=23.2.0 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (23.2.0)
+Requirement already satisfied: sortedcontainers in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (2.4.0)
+Requirement already satisfied: idna in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (3.7)
+Requirement already satisfied: outcome in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (1.3.0.post0)
+Requirement already satisfied: sniffio>=1.3.0 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (1.3.1)
+Requirement already satisfied: cffi>=1.14 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio~=0.17->selenium) (1.16.0)
+Requirement already satisfied: wsproto>=0.14 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from trio-websocket~=0.9->selenium) (1.2.0)
+Requirement already satisfied: pysocks!=1.5.7,<2.0,>=1.5.6 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from urllib3[socks]<3,>=1.26->selenium) (1.7.1)
+Requirement already satisfied: pycparser in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from cffi>=1.14->trio~=0.17->selenium) (2.22)
+Requirement already satisfied: h11<1,>=0.9.0 in c:\users\sarve\finkraft\webscraping\selenium_project\venv\lib\site-packages (from wsproto>=0.14->trio-websocket~=0.9->selenium) (0.14.0)
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> import selenium
+import : The term 'import' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, 
+verify that the path is correct and try again.
+At line:1 char:1
++ import selenium
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (import:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python testscript.py
+C:\Users\sarve\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\sarve\\Finkraft\\WebScraping\\selenium_project\\testscript.py': [Errno 2] No such file or directory
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python testscript.py
+C:\Users\sarve\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\sarve\\Finkraft\\WebScraping\\selenium_project\\testscript.py': [Errno 2] No such file or directory
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> cd C:\Users\sarve\Finkraft\WebScraping\selenium_project
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> dir
+
+
+    Directory: C:\Users\sarve\Finkraft\WebScraping\selenium_project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        06-06-2024     12:04                venv
+
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> cd venv
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv> dir
+
+
+    Directory: C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        06-06-2024     12:04                Include
+d-----        06-06-2024     12:04                Lib
+d-----        06-06-2024     12:17                Scripts
+-a----        06-06-2024     12:10            342 pyvenv.cfg
+
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv> python Scripts\testscript.py
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 9, in <module>
+    driver = webdriver.Chrome(executable_path=driver_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv> cd C:\Users\sarve\Finkraft\WebScraping\selenium_project
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 9, in <module>
+    driver = webdriver.Chrome(executable_path=driver_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 7
+    driver_path = 'C:\Users\sarve\Downloads\chromedriver-win64\chromedriver-win64\chromedriver'  # Replace with the actual path to your ChromeDriver
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 7
+    driver_path = 'C:\Users\sarve\Downloads\chromedriver-win64\chromedriver-win64\chromedriver'  # Replace with the actual path to your ChromeDriver
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: C:/Users/sarve/Downloads/chromedriver-win64/chromedriver-win64/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 13, in <module>
+    driver = webdriver.Chrome(service=service)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 7
+    driver_path = 'C:\Users\sarve\Downloads\chromedriver-win64\chromedriver-win64\chromedriver'  # Replace with the actual path to your ChromeDriver
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: C:\Users\sarve\Downloads\chromedriver-win64\chromedriver-win64\chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 13, in <module>
+    driver = webdriver.Chrome(service=service)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:50423/devtools/browser/07763025-0573-4186-b0be-5a4679d1dd1f
+Google
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:50679/devtools/browser/f514e711-8624-4bb8-8252-c0c4b5b36746
+Google
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:50890/devtools/browser/2f02c0c5-3d32-42ae-abe2-521afad077ae
+Google
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:50941/devtools/browser/45713dfe-adde-491f-b188-38759f052c69
+Google
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1091, in _send_output
+    self.send(msg)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1035, in send
+    self.connect()
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002CD0CBA9310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 35, in <module>
+    WebsiteOpenClose(webaddress2)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 18, in WebsiteOpenClose
+    driver.get(webaddress)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 302, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 322, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 144, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 279, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=50937): Max retries exceeded with url: /session/d29d9473a50a334d750435e6da2c9727/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CD0CBA9310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51008/devtools/browser/2c2f1530-807a-4e30-9d02-251238907acf
+Air India Express – GST Information
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51107/devtools/browser/41e6523f-686e-4b9d-81b7-8b137b04a503
+Google
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1091, in _send_output
+    self.send(msg)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1035, in send
+    self.connect()
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001EE54839310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 35, in <module>
+    WebsiteOpenClose(webaddress2)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 18, in WebsiteOpenClose
+    driver.get(webaddress)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 302, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 322, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 144, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 279, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=51102): Max retries exceeded with url: /session/21adec7fe592e4a199ca032078b85f1f/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EE54839310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51174/devtools/browser/d9c033dc-9e39-4958-a0ef-c0297274572b
+Google
+Air India Express – GST Information
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51293/devtools/browser/ad0aee0d-1cb3-4998-9156-f09d0b60273f
+Air India Express – GST Information
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51420/devtools/browser/63172283-10d9-464c-9d76-77efb5cbca0d
+Google
+Air India Express – GST Information
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:64586/devtools/browser/e71047fc-ccc0-4bbd-a9f0-86ed178ef56f
+Google
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1091, in _send_output
+    self.send(msg)
+  File "C:\Users\sarve\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1035, in send
+    self.connect()
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001AC094527B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 43, in <module>
+    OpenWebsite(driver,webaddress2)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 20, in OpenWebsite
+    driverobj.get(webaddress)
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 302, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 322, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 144, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\_request_methods.py", line 279, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=64582): Max retries exceeded with url: /session/8aaacac6b8eedc62aa19565e5a6d6f4b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AC094527B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: C:\Users\sarve\Finkraft\WebScraping\selenium_project\chromedriver.exe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 39, in <module>
+    driver = ObtainWebDriver(driver_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Scripts\testscript.py", line 13, in ObtainWebDriver
+    driverobj = webdriver.Chrome(service=service)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\Finkraft\WebScraping\selenium_project\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:64962/devtools/browser/51657d93-7f02-4768-94d7-abecef87741f
+Google
+Air India Express – GST Information
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51456/devtools/browser/95574227-5d6c-4482-9383-607c41506a97
+Google
+Air India Express – GST Information
+Element value: 
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:51884/devtools/browser/b2c0ec1f-d235-4114-922b-e9f231f85ff5
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:52088/devtools/browser/bc3fa226-64be-45aa-8e3e-af57d78e03ed
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+Press Enter to close the browser...
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:52269/devtools/browser/2aaaff8e-f0fb-4441-9a82-612430879655
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+Press Enter to close the browser...
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:52645/devtools/browser/3b488bf1-4ff6-45b0-9b0c-eacc8b9b5855
+Google
+Air India Express – GST Information
+Error: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="selectAirline"]"}
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+        GetHandleVerifier [0x00007FF6BF2422C2+60002]
+        (No symbol) [0x00007FF6BF1BCA59]
+        (No symbol) [0x00007FF6BF077EDA]
+        (No symbol) [0x00007FF6BF0C76E6]
+        (No symbol) [0x00007FF6BF0C77AC]
+        (No symbol) [0x00007FF6BF10E9D7]
+        (No symbol) [0x00007FF6BF0EC2CF]
+        (No symbol) [0x00007FF6BF10BCC7]
+        (No symbol) [0x00007FF6BF0EC033]
+        (No symbol) [0x00007FF6BF0B9657]
+        (No symbol) [0x00007FF6BF0BA251]
+        GetHandleVerifier [0x00007FF6BF553E2D+3278285]
+        GetHandleVerifier [0x00007FF6BF5A0190+3590448]
+        GetHandleVerifier [0x00007FF6BF5961D0+3549552]
+        GetHandleVerifier [0x00007FF6BF2F1DE6+779654]
+        (No symbol) [0x00007FF6BF1C7ACF]
+        (No symbol) [0x00007FF6BF1C2EE4]
+        (No symbol) [0x00007FF6BF1C3072]
+        (No symbol) [0x00007FF6BF1B2C4F]
+        BaseThreadInitThunk [0x00007FF98807257D+29]
+        RtlUserThreadStart [0x00007FF9895EAA48+40]
+
+Error: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="pnr"]"}
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+        GetHandleVerifier [0x00007FF6BF2422C2+60002]
+        (No symbol) [0x00007FF6BF1BCA59]
+        (No symbol) [0x00007FF6BF077EDA]
+        (No symbol) [0x00007FF6BF0C76E6]
+        (No symbol) [0x00007FF6BF0C77AC]
+        (No symbol) [0x00007FF6BF10E9D7]
+        (No symbol) [0x00007FF6BF0EC2CF]
+        (No symbol) [0x00007FF6BF10BCC7]
+        (No symbol) [0x00007FF6BF0EC033]
+        (No symbol) [0x00007FF6BF0B9657]
+        (No symbol) [0x00007FF6BF0BA251]
+        GetHandleVerifier [0x00007FF6BF553E2D+3278285]
+        GetHandleVerifier [0x00007FF6BF5A0190+3590448]
+        GetHandleVerifier [0x00007FF6BF5961D0+3549552]
+        GetHandleVerifier [0x00007FF6BF2F1DE6+779654]
+        (No symbol) [0x00007FF6BF1C7ACF]
+        (No symbol) [0x00007FF6BF1C2EE4]
+        (No symbol) [0x00007FF6BF1C3072]
+        (No symbol) [0x00007FF6BF1B2C4F]
+        BaseThreadInitThunk [0x00007FF98807257D+29]
+        RtlUserThreadStart [0x00007FF9895EAA48+40]
+
+Press Enter to close the browser...Created TensorFlow Lite XNNPACK delegate for CPU.
+ 
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:52876/devtools/browser/94b4d241-f83f-4930-8725-ed0ff0f058b3
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+Press Enter to close the browser...Created TensorFlow Lite XNNPACK delegate for CPU.
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> 
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project>
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:53318/devtools/browser/5786835e-aa63-4c8b-9fb6-0076f3375f8f
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+Element value changed to: SXR
+Press Enter to close the browser...Created TensorFlow Lite XNNPACK delegate for CPU.
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:53450/devtools/browser/1e01e595-2a40-4f85-a79f-57e791e0bf54
+Google
+Air India Express – GST Information
+Element value: 
+Element value changed to: KY7Q4E
+Element value changed to: SXR
+Press Enter to close the browser...Created TensorFlow Lite XNNPACK delegate for CPU.
+ 
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project> python venv\Scripts\testscript.py
+
+DevTools listening on ws://127.0.0.1:54010/devtools/browser/56b06772-7fb6-4fa0-8c77-3f9bc9256d37
+Google
+Air India Express – GST Information
+Element value: 
+Error: Message: invalid element state
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+        GetHandleVerifier [0x00007FF6BF2422C2+60002]
+        (No symbol) [0x00007FF6BF1BCA59]
+        (No symbol) [0x00007FF6BF077D09]
+        (No symbol) [0x00007FF6BF0BD169]
+        (No symbol) [0x00007FF6BF0EC28A]
+        (No symbol) [0x00007FF6BF0BADF6]
+        (No symbol) [0x00007FF6BF0EC4A0]
+        (No symbol) [0x00007FF6BF10BCC7]
+        (No symbol) [0x00007FF6BF0EC033]
+        (No symbol) [0x00007FF6BF0B9657]
+        (No symbol) [0x00007FF6BF0BA251]
+        GetHandleVerifier [0x00007FF6BF553E2D+3278285]
+        GetHandleVerifier [0x00007FF6BF5A0190+3590448]
+        GetHandleVerifier [0x00007FF6BF5961D0+3549552]
+        GetHandleVerifier [0x00007FF6BF2F1DE6+779654]
+        (No symbol) [0x00007FF6BF1C7ACF]
+        (No symbol) [0x00007FF6BF1C2EE4]
+        (No symbol) [0x00007FF6BF1C3072]
+        (No symbol) [0x00007FF6BF1B2C4F]
+        BaseThreadInitThunk [0x00007FF98807257D+29]
+        RtlUserThreadStart [0x00007FF9895EAA48+40]
+
+Element value changed to: KY7Q4E
+Element value changed to: SXR
+Press Enter to close the browser...Created TensorFlow Lite XNNPACK delegate for CPU.
+
+(venv) PS C:\Users\sarve\Finkraft\WebScraping\selenium_project>   
